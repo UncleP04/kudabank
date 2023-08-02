@@ -9,7 +9,7 @@ const Content: React.FC = () => {
       <section className="pt-10 grid grid-cols-1 md:grid-cols-2 gap-x-5 justify-between items-end rounded-md courve shadow-lg">
         <div className="p-4 h-auto">
           <div className="mb-4">
-            <h2 className="text-[3em] text-primary font-bold uppercase">Content</h2>
+            <h2 className="text-[3em] text-primary font-bold uppercase">Content.</h2>
             <p className="text-primary md:w-[400px] font-semibold">
               With Kuda Bank you can enjoy a streamlined digital and mobile
               banking experience with ease.
