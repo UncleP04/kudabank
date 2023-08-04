@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Image from "next/image";
 import Phone from "../../public/Images/phone.png";
 import "../styles/menu.css";
+import { motion } from 'framer-motion'
 
 const Content: React.FC = () => {
+
   return (
-    <div className="md:p-[3%]">
+    <motion.div className="md:p-[3%]">
       <section className="pt-10 grid grid-cols-1 md:grid-cols-2 gap-x-5 justify-between items-end rounded-md courve shadow-lg">
         <div className="p-4 h-auto">
           <div className="mb-4">
@@ -33,7 +35,7 @@ const Content: React.FC = () => {
           />
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 
