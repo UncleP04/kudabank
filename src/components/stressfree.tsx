@@ -16,7 +16,7 @@ const StressFree: React.FC = () => {
   }, []);
   return (
     <div>
-      <section className="md:px-[4%] w-[100%] md:h-[100vh] p-4 grid grid-cols-1 md:grid-cols-2 justify-center items-center md:mt-[40px] bg-pinky">
+      <section className="md:px-[4%] w-[100%] h-auto py-8 p-4 grid grid-cols-1 md:grid-cols-2 justify-center items-center md:mt-[40px] bg-pinky">
         <div className="md:p-6" data-aos="zoom-in">
           <h2 className="text-[3em] lg:text-[4em] text-primary font-bold">Spend • Easy• Stress Free</h2>
           <p className="text-[20px] lg:w-[450px] py-4">

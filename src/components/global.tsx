@@ -15,9 +15,9 @@ const Global: React.FC = () => {
   }, []);
   return (
     <div>
-      <section className="p-4 md:p-[4%] grid grid-cols-1 md:grid-cols-2 justify-center items-center md:mt-[40px] relative">
+      <section className="p-4 md:p-[4%] grid grid-cols-1 md:grid-cols-2 justify-center items-center md:mt-[40px] relative h-auto py-8">
         <div className="pt-10 md:pt-0">
-          <div className="w-[100%] h-[100%] flex justify-center aligna-middle items-center" data-aos="zoom-in">
+          <div className="w-[100%] flex justify-center aligna-middle items-center" data-aos="zoom-in">
             <Image
               src={Plane}
               alt="debit.png"

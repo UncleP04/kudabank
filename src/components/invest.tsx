@@ -16,13 +16,13 @@ const Invest: React.FC = () => {
   }, []);
   return (
     <div>
-      <section className="p-4 md:px-[4%] grid grid-cols-1 md:grid-cols-2 justify-center items-center md:mt-[40px] w-[100%] md:h-[100vh] relative">
+      <section className="p-4 md:px-[4%] grid grid-cols-1 md:grid-cols-2 justify-center items-center md:mt-[40px] w-[100%] h-auto py-8 relative">
         <div className="md:p-6">
           <h2 className="text-[3em] lg:text-[4em] text-primary font-bold" data-aos="zoom-in">
             Invest
           </h2>
           <p className="text-[20px] lg:w-[450px] py-4" data-aos="zoom-in">
-            We’re bringing verified global investment options closer to every
+            We are bringing verified global investment options closer to every
             African with fractional shares on Kud.
           </p>
           <p className="text-[20px] lg:w-[450px] py-4" data-aos="zoom-in">
