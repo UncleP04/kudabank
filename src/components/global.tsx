@@ -32,8 +32,8 @@ const Global: React.FC = () => {
             Send
           </h2>
           <p className="text-[20px] lg:w-[450px] py-4" data-aos="zoom-in">
-            With Kuda, sending money is easy and hassle-free. From local
-            transfers to international payments, we've got you covered.
+            With Kuda, sending money is easy and hassle free. From local
+            transfers to international payments, we have got you covered.
           </p>
           <p className="text-[20px] lg:w-[450px] py-4" data-aos="zoom-in">
             Connect with friends, send unlimited instant transfers for free, and
