@@ -25,15 +25,26 @@ const Navbar: React.FC = () => {
             />
         </Link>
         <button
-          type="button"
-          onClick={toggleMenu}
-          className="flex-col justify-between align-middle w-20 z-50 fixed top-[20px] right-[15px] block md:hidden"
-        >
-          <div className="w-7 h-[5px] hover:mb-2 bg-primary self-end m-1 border border-white"></div>
-          <div className="w-4 h-[5px] bg-primary self-end m-1 border border-white"></div>
-          <div className="w-7 h-[5px] hover:mt-2 bg-primary self-end m-1 border border-white"></div>
-        </button>
-        <div className={`${isOpen ? "h-screen md:h-auto flex flex-col justify-evenly items-center top-[-6px] md:top-0" : "top[-100%] md:top-0 h-0 hidden md:flex"} navbar left-0 fixed md:relative md:top-[25px] w-[100%] flex md:flex-row flex-col justify-between items-center gap-x-8 md:w-[70%] md:bg-transparent bg-primary`}>
+        type="button"
+        onClick={toggleMenu}
+        className="flex-col justify-between align-middle w-20 z-50 fixed top-[20px] right-[15px] block md:hidden"
+      >
+        {isOpen ? (
+          // "X" icon
+          <>
+            <div className="w-8 h-[5px] bg-white self-end m-1 border border-black transform rotate-45 translate-x-1 absolute"></div>
+            <div className="w-8 h-[5px] bg-white self-end m-1 border border-black transform -rotate-45 translate-x-1 absolute"></div>
+          </>
+        ) : (
+          // Burger icon
+          <>
+            <div className="w-7 h-[5px] hover:mb-2 bg-white self-end m-1 border border-black"></div>
+            <div className="w-4 h-[5px] bg-white self-end m-1 border border-black"></div>
+            <div className="w-7 h-[5px] hover:mt-2 bg-white self-end m-1 border border-black"></div>
+          </>
+        )}
+      </button>
+        <div className={`${isOpen ? "h-screen md:h-auto flex flex-col justify-evenly items-center top-[-6px] md:top-0 duration-100" : "top[-100%] md:top-0 h-0 hidden md:flex duration-100"} navbar left-0 fixed md:relative md:top-[25px] w-[100%] flex md:flex-row flex-col justify-between items-center gap-x-8 md:w-[70%] md:bg-transparent bg-primary z-40 duration-100 transition-all`}>
             <ul className="flex md:flex-row flex-col justify-center items-center gap-x-10">
                 <li className={`${isOpen ? "text-white my-8" : "text-primary"}`}><Link href='' className="text-white md:text-primary font-semibold">Features</Link></li>
                 <li className={`${isOpen ? "text-white my-8" : "text-primary"}`}><Link href='' className="text-white md:text-primary font-semibold">Business</Link></li>
